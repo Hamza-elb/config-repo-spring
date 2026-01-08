@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Getway
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: PersonServiceRoute
+              uri: lb://PersonService
+              predicates:
+                - Path=/api/persons/**
+  loadbalancer:
+    ribbon:
+      enabled: true
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  
+app:
+  message: API Gateway - Configuration centralisee
