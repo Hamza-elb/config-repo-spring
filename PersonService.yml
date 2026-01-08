@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: PersonService
+server:
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+app:
+  message: Person Service - Configuration centralisee depuis GitHub
