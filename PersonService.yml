@@ -10,8 +10,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 app:
-  message: Person Service - Version Final depuis GitHub
-  version: 3.0
+  message: Person Service - Version Final V2 depuis GitHub
+  version: 7.0
 management:
   endpoints:
     web:
