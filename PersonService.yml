@@ -10,5 +10,5 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 app:
-  message: Person Service - Configuration centralisee depuis GitHub
-  version: 1.0
+  message: Person Service - Version Final depuis GitHub
+  version: 3.0
